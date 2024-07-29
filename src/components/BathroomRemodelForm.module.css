@@ -1,0 +1,100 @@
+/* BathroomRemodelForm.module.css */
+.formContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.formHeading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0056b3;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.label, .checkboxLabel {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input, .select, .checkboxContainer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inputCheckbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.button, .prevButton, .nextButton, .submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.button:hover, .prevButton:hover, .nextButton:hover, .submitButton:hover {
+    background-color: #004494;
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showerStyleImage, .showerDoorImage {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.showerDoorOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.showerDoorOption {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.showerDoorOption.selected {
+    border-color: #0056b3;
+}

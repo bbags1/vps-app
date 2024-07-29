@@ -1,0 +1,41 @@
+.admin {
+    padding: 2rem;
+    background-color: #fce4ec;
+  }
+  
+  .admin h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .admin form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin input[type="text"],
+  .admin input[type="file"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d81b60;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin button:hover {
+    background-color: #ad1457;
+  }

@@ -26,8 +26,8 @@
   text-align: center;
   width: 200px; /* Adjust width as needed */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's on top */
 }
-
 .navbar-links.open {
   display: block;
 }

@@ -23,7 +23,7 @@
 }
 
 .navbar-links li a {
-  color: #fff;
+  color: #d61e1e;
   text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
 .menu-toggle {
   display: none;
   background: #2c3e50;
-  color: #fff;
+  color: #d61e1e;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 12px 20px;

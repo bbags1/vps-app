@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <h1 style={{ color: '#fff', textDecoration: 'none' }}>Vancouver Tile & Bath</h1>
+        <img src="/Assets/logo.png" alt="" style={{ width: '300px', height: 'auto' }} />
       </Link>
       <button className="menu-toggle" onClick={toggleMenu}>Menu</button>
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>

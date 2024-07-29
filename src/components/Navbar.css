@@ -1,8 +1,38 @@
 .navbar-links {
   display: flex;
-  gap: 20px;
-  list-style: none; /* Removes bullet points from list */
-  flex-direction: column; /* Ensures the links are vertically aligned */
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  background-color: #2c3e50; /* Dark blue background */
+  top: 60px;
+  left: 0;
+  right: 0;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  border-top: 3px solid #3498db; /* Blue border top for accent */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1000; /* Ensure it's above other content */
+  transition: all 0.3s ease;
+}
+
+.navbar-links li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #34495e; /* Subtle separators */
+}
+
+.navbar-links li:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+.navbar-links li a {
+  color: #fff; /* White text for readability */
+  text-decoration: none; /* No underline */
+  display: block; /* Makes the entire area clickable */
+}
+
+.navbar-links li a:hover {
+  background-color: #34495e; /* Background change on hover */
 }
 
 .navbar-links.open {
@@ -20,14 +50,19 @@
 
 .menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  color: rgb(189, 11, 11);
+  background: #2c3e50; /* Dark blue background */
+  color: #fff; /* White text color */
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 10px 20px; /* New padding */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #34495e; /* Slightly darker on hover */
 }
 
 .menu-toggle:hover {
@@ -36,10 +71,10 @@
 
 @media (max-width: 768px) {
   .navbar-links {
-    display: none;
+    display: none; /* Hide by default, show on toggle */
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* Show toggle button on small screens */
   }
 }

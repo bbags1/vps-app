@@ -12,19 +12,22 @@
   align-items: center;
   color: #fff;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em; /* Adjusted for mobile */
   font-weight: bold;
-}
-
-.navbar-logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
 }
 
 .navbar-links {
   display: flex;
-  gap: 20px;
+  gap: 10px; /* Reduced gap for mobile */
+}
+
+@media (min-width: 768px) {
+  .navbar-logo {
+    font-size: 1.5em;
+  }
+  .navbar-links {
+    gap: 20px;
+  }
 }
 
 .navbar-links a {

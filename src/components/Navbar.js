@@ -15,12 +15,12 @@ function Navbar() {
         <img src="/Assets/logo.png" alt="" style={{ width: '300px', height: 'auto' }} />
       </Link>
       <button className="menu-toggle" onClick={toggleMenu}>Menu</button>
-      <div className={`navbar-links ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={toggleMenu}>Home</Link>
-        <Link to="/services" onClick={toggleMenu}>Services</Link>
-        <Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link>
-        <Link to="/contact" onClick={toggleMenu}>Contact Us</Link>
-      </div>
+      <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
+        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+        <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+        <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
+      </ul>
     </nav>
   );
 }

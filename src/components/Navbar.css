@@ -1,34 +1,21 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.navbar-logo img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
 .navbar-links {
   display: flex;
   gap: 20px;
   list-style: none; /* Removes bullet points from list */
+  flex-direction: column; /* Ensures the links are vertically aligned */
 }
 
 .navbar-links.open {
   display: block;
   position: absolute;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.95); /* Semi-transparent black */
   top: 60px;
   left: 0;
   right: 0;
   text-align: center;
-}
-
-.navbar-links li {
-  padding: 10px 20px;
+  padding: 20px 0; /* Adds vertical padding */
+  border-bottom: 1px solid #444; /* Adds a subtle border */
+  transition: all 0.3s ease; /* Smooth transition for opening the menu */
 }
 
 .menu-toggle {
@@ -38,12 +25,18 @@
   color: rgb(189, 11, 11);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 10px 20px; /* New padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.menu-toggle:hover {
+  background-color: rgba(189, 11, 11, 0.8); /* Slightly transparent on hover */
 }
 
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
-    flex-direction: column;
   }
 
   .menu-toggle {

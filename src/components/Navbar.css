@@ -12,6 +12,7 @@
 
 .menu-container {
   position: relative;
+  right: 20px; /* Adds space on the right edge */
 }
 
 .navbar-links {

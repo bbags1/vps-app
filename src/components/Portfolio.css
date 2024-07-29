@@ -97,3 +97,10 @@
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 90%; /* Make images almost full width on mobile */
+    margin: 5% 5%; /* Center images with margin */
+  }
+}

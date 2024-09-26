@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <img src="/Assets/logo.png" alt="" style={{ width: '300px', height: 'auto' }} />
+        <img src="/Assets/logo.png" alt="Vancouver Property Services" />
       </Link>
       <div className="menu-container">
         <button className="menu-toggle" onClick={toggleMenu}>Menu</button>

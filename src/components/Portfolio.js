@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Portfolio.css';
 import servicesData from '../data/servicesData';
 
@@ -48,11 +47,12 @@ function Portfolio() {
       <h1>{service ? service.name : 'Service Not Found'}</h1>
       <div className="gallery">
         {images.map((img, index) => (
-          <LazyLoadImage
+          <img
             key={index}
             src={img}
             alt={`${service ? service.name : 'No Image Available'}`}
             effect="blur"
+            loading="lazy"
             onClick={() => openModal(img)}
           />
         ))}

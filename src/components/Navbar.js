@@ -15,7 +15,9 @@ function Navbar() {
         <img src="/Assets/logo.png" alt="Vancouver Property Services" />
       </Link>
       <div className="menu-container">
-        <button className="menu-toggle" onClick={toggleMenu}>Menu</button>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          Menu
+        </button>
         <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>

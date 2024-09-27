@@ -1,19 +1,16 @@
 .home {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
 .hero-overlay {
+  position: relative;
   background-image: url('/public/Assets/Wallpaper.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 80px); /* Adjust for navbar height */
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .hero-overlay::before {
@@ -35,7 +32,7 @@
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -73,43 +70,12 @@
   max-width: 500px;
 }
 
-.services-overview h2, .about-us h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.services-overview ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.services-overview li {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.about-us p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  
-  .hero-content p {
-    font-size: 1rem;
-  }
-  
   .content-section {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .services-overview, .about-us {
     flex-basis: 100%;
     margin-bottom: 2rem;

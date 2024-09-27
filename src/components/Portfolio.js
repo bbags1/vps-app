@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './Portfolio.css';
 import servicesData from '../data/servicesData';
 
+// ... rest of the component code
 function Portfolio() {
   const { serviceType } = useParams();
   const navigate = useNavigate();

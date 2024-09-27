@@ -1,5 +1,5 @@
 .home {
-  padding-top: 80px; /* Adjust this value based on your navbar height */
+  padding-top: 80px; /* Adjust this value to match your navbar height */
 }
 
 .hero-overlay {
@@ -7,11 +7,13 @@
   background-image: url('/public/Assets/Wallpaper.jpg');
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 80px); /* Adjust for navbar height */
+  height: calc(100vh - 80px); /* Adjust this value to match your navbar height */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* ... rest of the CSS remains the same ... */
 
 .hero-overlay::before {
   content: '';
